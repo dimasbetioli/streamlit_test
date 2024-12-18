@@ -1,24 +1,64 @@
 import streamlit as st
 
+# Configuração da página
 st.set_page_config(
-    page_title="Teste de Tema",
-    page_icon="https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/mult2.png",
-    layout="centered"
+    page_title="App Atrativo",
+    page_icon="🎨",
+    layout="wide",  # Layout mais amplo para aproveitar o espaço
+    initial_sidebar_state="expanded"
 )
 
-st.sidebar.divider()
-c1,c2 = st.sidebar.columns([2,2])
+# Estilo da sidebar
+with st.sidebar:
+    st.image(
+        "https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/mult2.png",
+        use_column_width=True,
+    )
+    st.markdown(
+        "<h2 style='text-align: center; color: #4CAF50;'>Menu</h2>",
+        unsafe_allow_html=True,
+    )
+    st.divider()
 
-logo1 = "https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/logo1.png"
-logo2 = "https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/logo2.png"
+    # Colunas para logos
+    c1, c2 = st.columns(2)
+    c1.image("https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/logo1.png")
+    c2.image("https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/logo2.png")
 
-c1.image(logo1)
-c2.image(logo2)
+# Título principal com emoji
+st.markdown(
+    "<h1 style='text-align: center; color: #2196F3;'>🎉 Aplicação Simples com Estilo</h1>",
+    unsafe_allow_html=True,
+)
 
-st.title("🎉 Aplicação Simples com Streamlit")
-st.write("Este é um teste para aplicar temas com `config.toml`.")
+# Caixa de introdução
+st.markdown(
+    """
+    <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; margin: 10px 0;">
+        <h3 style="text-align: center; color: #FF5722;">Este é um teste para personalizar o tema diretamente no código!</h3>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
-# Entrada simples
+# Entrada de texto
 nome = st.text_input("Digite seu nome:")
 if nome:
     st.success(f"Olá, {nome}! O tema está funcionando? 😊")
+
+# Adicionando uma imagem como banner
+st.image(
+    "https://via.placeholder.com/1200x300.png?text=Bem-vindo+ao+App+Atrativo+com+Streamlit",
+    caption="Personalização de layout no Streamlit",
+    use_column_width=True,
+)
+
+# Footer
+st.markdown(
+    """
+    <footer style="text-align: center; margin-top: 20px;">
+        <small>Feito com ❤️ usando Streamlit</small>
+    </footer>
+    """,
+    unsafe_allow_html=True,
+)
