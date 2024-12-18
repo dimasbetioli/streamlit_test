@@ -1,6 +1,5 @@
 import streamlit as st
 
-[theme]
 primaryColor = "#ff0000"  # Vermelho
 backgroundColor = "#000000"  # Preto
 secondaryBackgroundColor = "#1e1e1e"  # Cinza escuro
