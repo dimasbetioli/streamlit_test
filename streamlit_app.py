@@ -11,8 +11,8 @@ st.set_page_config(
 # Estilo da sidebar
 with st.sidebar:
     st.image(
-        "https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/mult.png",
-        use_column_width=True,
+        "https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/mult2.png",
+        use_container_width=True,  # Corrigido para evitar o aviso
     )
     st.markdown(
         "<h2 style='text-align: center; color: #4CAF50;'>Menu</h2>",
@@ -22,8 +22,8 @@ with st.sidebar:
 
     # Colunas para logos
     c1, c2 = st.columns(2)
-    c1.image("https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/logo1.png")
-    c2.image("https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/logo2.png")
+    c1.image("https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/logo1.png", use_container_width=True)
+    c2.image("https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/logo2.png", use_container_width=True)
 
 # Título principal com emoji
 st.markdown(
@@ -50,7 +50,7 @@ if nome:
 st.image(
     "https://via.placeholder.com/1200x300.png?text=Bem-vindo+ao+App+Atrativo+com+Streamlit",
     caption="Personalização de layout no Streamlit",
-    use_column_width=True,
+    use_container_width=True,  # Corrigido para evitar o aviso
 )
 
 # Footer
