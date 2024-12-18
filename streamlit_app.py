@@ -11,7 +11,7 @@ st.set_page_config(
 # Estilo da sidebar
 with st.sidebar:
     st.image(
-        "https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/mult2.png",
+        "https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/mult.png",
         use_column_width=True,
     )
     st.markdown(
