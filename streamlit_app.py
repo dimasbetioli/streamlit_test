@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Teste de Tema",
-    page_icon="🎨",
+    page_icon="https://raw.githubusercontent.com/dimasbetioli/streamlit_test/refs/heads/main/mult.png",
     layout="centered"
 )
 
