@@ -6,12 +6,6 @@ st.set_page_config(
     layout="centered"
 )
 
-primaryColor = "#ff0000"  # Vermelho
-backgroundColor = "#000000"  # Preto
-secondaryBackgroundColor = "#1e1e1e"  # Cinza escuro
-textColor = "#ffffff"  # Branco
-font = "monospace"  # Altere para uma fonte diferente
-
 st.sidebar.divider()
 c1,c2 = st.sidebar.columns([2,2])
 
